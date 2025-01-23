@@ -9,7 +9,7 @@ class Subscriber extends Model
 {
     use HasFactory; 
 
-    protected $table = 'Subscribers';
+    protected $table = 'subscribers';
 
     protected $guarded = ['id'];
 

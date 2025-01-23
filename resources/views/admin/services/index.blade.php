@@ -36,9 +36,7 @@
                                         <tr>
                                             <td>{{ $services->firstItem() + $loop->index }}</td>
                                             <td>{{ $service->title }}</td>
-                                            <td>
-                                                <i class=" {{ $service->icons }} ">></i>
-                                            </td>
+                                            <td> {{ $service->icon }}</td>
 
                                             <td>
                                                 

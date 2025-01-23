@@ -28,6 +28,14 @@
     </div>
 
     @include('front.partials.scripts')
+    <script>
+         setTimeout(function() {
+            var elementToHide = document.getElementById('myElement');
+            if (elementToHide) {
+                elementToHide.style.display = 'none';
+            }
+        }, 5000);
+    </script>
 </body>
 
 </html>

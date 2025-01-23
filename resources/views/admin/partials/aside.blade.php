@@ -38,9 +38,21 @@
         {{-- messages --}}
         <x-sidebar-tab href="{{ route('admin.messages.index') }}" icon="fe-message-square"
          name="{{ __('keywords.messages') }}"></x-sidebar-tab>
-        {{-- Subscribers --}}
-        <x-sidebar-tab href="{{ route('admin.Subscribers.index') }}" icon="fe-message-square"
-         name="{{ __('keywords.Subscribers') }}"></x-sidebar-tab>
+        {{-- subscribers --}}
+        <x-sidebar-tab href="{{ route('admin.subscribers.index') }}" icon="fe-users"
+         name="{{ __('keywords.subscribers') }}"></x-sidebar-tab>
+        {{-- testmonials --}}
+        <x-sidebar-tab href="{{ route('admin.testmonials.index') }}" icon="fe-message-circle"
+         name="{{ __('keywords.testmonials') }}"></x-sidebar-tab>
+        {{-- companies --}}
+        <x-sidebar-tab href="{{ route('admin.companies.index') }}" icon="fe fe-24 fe-grid"
+         name="{{ __('keywords.companies') }}"></x-sidebar-tab>
+        {{-- members --}}
+        <x-sidebar-tab href="{{ route('admin.members.index') }}" icon="fe fe-24 fe-user"
+         name="{{ __('keywords.members') }}"></x-sidebar-tab>
+        {{-- settings --}}
+        <x-sidebar-tab href="{{ route('admin.settings.index') }}" icon="fe-settings"
+         name="{{ __('keywords.settings') }}"></x-sidebar-tab>
       </ul>
         
 

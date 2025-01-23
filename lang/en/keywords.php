@@ -31,7 +31,29 @@ return [
     'messages'=>'Messages',
     'name'=>'Name',
     'subject'=>'Subject',
-    'Subscribers'=>'Subscribers',
-
+    'subscribers'=>'Subscribers',
+      
+    //============Testmonials
+    'testmonials' => 'Testmonials',
+    'position' => 'Position',
+    'image' => 'Image',
+    'add_new_testmonial' => 'Add_New_Testmonial',
+    'show_testmonial' => 'Show_Testmonial',
+    'edit_testmonial' => 'Edit_Testmonial',
+    //============Companies
+    'companies' => 'Companies',
+    'company' => 'Company',
+    //============Members
+    'members' => 'Members',
+    'facebook' => 'Facebook',
+    'twitter' => 'Twitter',
+    'linkedin' => 'Linkedin',
+    //============Settings
+    'settings' => 'Settings',
+    'address' => 'Address',
+    'phone' => 'Phone',
+    'instagram' => 'Instagram',
+    'youtube' => 'Youtube',
+  
 
 ];

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Subscriber;
+use App\Http\Requests\StoreSubscriberRequest;
+use App\Http\Requests\UpdateSubscriberRequest;
 
 class SubscriberController extends Controller
 {
@@ -11,15 +13,16 @@ class SubscriberController extends Controller
      */
     public function index()
     {
-        $Subscribers = Subscriber::paginate(config('pageination.count'));
-        return view('admin.Subscribers.index',get_defined_vars());
+        $subscribers = Subscriber::paginate(config('pageination.count'));
+        return view('admin.subscribers.index',get_defined_vars());
     }
+
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(Subscriber $subscriber)
     {
         $subscriber->delete();
-        return to_route('admin.Subscribers.index')->with('success',__('keywords.record_deleted'));
+        return to_route('admin.subscribers.index')->with('success',__('keywords.record_deleted'));
     }
 }
